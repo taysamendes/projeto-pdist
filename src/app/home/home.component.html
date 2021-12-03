@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap" rel="stylesheet">
+
+<div class="container">
+    <div class="dicas">
+        <h3><strong>Currículo</strong></h3>
+        <span>Confira as dicas abaixo para garantir um bom currículo</span>
+    </div>
+
+    <div class="card-dicas">
+        <div class="card-group">
+            <div class="card" *ngFor="let dica of dicas">
+              <img class="card-img-top" [src]="dica.imagem" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{dica.titulo}}</h5>
+                <p class="card-text">{{dica.descricao}}</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
