@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { CurriculosComponent } from './curriculos/curriculos.component';
+import { AlunosComponent } from './alunos/alunos.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     HomeComponent,
     FooterComponent,
+    CurriculosComponent,
+    AlunosComponent,
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
