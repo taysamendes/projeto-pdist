@@ -6,9 +6,16 @@
     font-family: 'Dosis', sans-serif;
 }
 
+.card{
+    border-top: #00b33c solid;
+    margin-right: 15px;
+}
 .card-img-top{
     transition: 1s ease;
-    }
+    width: 250px;
+    padding-left: 22%;
+    padding-top: 2%;
+}
     
 .card-img-top:hover{
 -webkit-transform: scale(0.9);
