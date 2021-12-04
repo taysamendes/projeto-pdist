@@ -1,1 +1,182 @@
-<p>cadastro works!</p>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap" rel="stylesheet">
+<div class="container">
+    <h3 class="titulo">Cadastre seu currículo</h3>
+
+    <form action="" method="POST" name="formulario">
+        <div class="col-md-6 offset-md-3">
+            <div class="mb-3">
+                <label for="form-nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="form-nome">
+            </div>
+            <div class="mb-3">
+                <label for="form-email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="form-email">
+            </div>
+
+            <div class="mb-3">
+                <label for="form-telefone" class="form-label">Telefone:</label>
+                <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="form-control"
+                    id="form-telefone">
+            </div>
+
+            <label for="form-cidade" class="form-label mb-3">Informe sua cidade</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecione</option>
+                <option value="1">Cabedelo</option>
+                <option value="2">Cajazeiras</option>
+                <option value="3">João Pessoa</option>
+            </select>
+
+            <label for="form-formacao" class="form-espaco form-label">Formação acadêmica:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Superior completo
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Superior em andamento
+                </label>
+            </div>
+
+            <label for="form-curso" class="form-espaco form-label">Curso:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Sistemas para internet
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Redes de computadores
+                </label>
+            </div>
+
+            <label for="form-experiencia" class="form-label form-espaco">Experiência Profissional:</label>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="experiencia"></textarea>
+                <label for="experiencia"></label>
+            </div>
+
+            <label for="form-atividade" class="form-label form-espaco">Atividades extracurriculares:</label>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="atividade"></textarea>
+                <label for="atividade"></label>
+            </div>
+
+            <label for="form-idioma" class="form-label form-espaco">Idiomas:</label>
+            <div class="form-check-idioma">
+                <input class="form-check-input" type="checkbox" value="" id="id-ingles">
+                <label class="form-check-label" for="id-ingles">
+                    Inglês
+                </label>
+            </div>
+            <div class="form-check-idioma">
+                <input class="form-check-input" type="checkbox" value="" id="id-espanhol">
+                <label class="form-check-label" for="id-espanhol">
+                    Espanhol
+                </label>
+            </div>
+            <div class="form-check-idioma">
+                <input class="form-check-input" type="checkbox" value="" id="id-frances">
+                <label class="form-check-label" for="id-frances">
+                    Francês
+                </label>
+            </div>
+            <br />
+
+            <label for="form-lig-prog" class="form-label form-espaco">Conhecimentos técnicos:</label><br />
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-html">
+                <label class="form-check-label" for="id-ligprog">
+                    HTML
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-css">
+                <label class="form-check-label" for="id-ligprog">
+                    CSS
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-js">
+                <label class="form-check-label" for="id-ligprog">
+                    JavaScript
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-ligprog-C">
+                <label class="form-check-label" for="id-ligprog">
+                    C
+                </label>
+            </div>
+
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-ligprog-java">
+                <label class="form-check-label" for="id-ligprog">
+                    Java
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-ligprog-python">
+                <label class="form-check-label" for="id-ligprog">
+                    Python
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-git">
+                <label class="form-check-label" for="id-ligprog">
+                    Git
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-mysql">
+                <label class="form-check-label" for="id-ligprog">
+                    MySQL
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-postgres">
+                <label class="form-check-label" for="id-ligprog">
+                    PostgreSQL
+                </label>
+            </div>
+            
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-mongo">
+                <label class="form-check-label" for="id-ligprog">
+                    MongoDB
+                </label>
+            </div>
+           
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-linux">
+                <label class="form-check-label" for="id-ligprog">
+                    Linux
+                </label>
+            </div>
+            <div class="form-check-ligprog">
+                <input class="form-check-input" type="checkbox" value="" id="id-scrum">
+                <label class="form-check-label" for="id-ligprog">
+                    Scrum
+                </label>
+            </div>
+
+            <div class="form-espaco">
+                <label for="form-github" class="form-label">Github:</label>
+                <input type="url" class="form-control" id="form-github">
+            </div>
+
+            <div class="form-espaco">
+                <label for="form-linkedin" class="form-label">Linkedin:</label>
+                <input type="url" class="form-control" id="form-linkedin">
+            </div>
+        </div>
+
+
+        <button type="submit" class="btn btn-success col-md-6 offset-md-3 form-espaco">Enviar</button>
+    </form>
+</div>

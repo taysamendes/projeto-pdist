@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Dicas } from './Dicas.modele';
+import { Dicas } from './Dicas.model';
 
 @Component({
   selector: 'app-home',

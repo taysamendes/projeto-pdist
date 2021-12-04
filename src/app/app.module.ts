@@ -7,7 +7,6 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { CurriculosComponent } from './curriculos/curriculos.component';
-import { AlunosComponent } from './alunos/alunos.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     HomeComponent,
     FooterComponent,
     CurriculosComponent,
-    AlunosComponent,
     CadastroComponent,
   ],
   imports: [
