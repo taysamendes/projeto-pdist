@@ -5,7 +5,7 @@ export class Curriculo {
     public cidade!: string
     public formacao!: string
     public experiencia!: string
-    public conhecimentoTecnico!: Array<string>
+    public conhecimento!: Array<string>
     public linkedin!: string
     public gitHub!: string
     public telefone!: string

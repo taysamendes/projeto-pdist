@@ -8,7 +8,7 @@ import { Curriculo } from 'src/app/curriculos/curriculo.model';
   providedIn: 'root'
 })
 export class CurriculoService {
-  url = 'http://localhost:8080/curriculos'
+  url = 'http://new-django.herokuapp.com/students'
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -25,5 +25,9 @@ export class CurriculoService {
 
   public cadastrarCurriculo(curriculo: Curriculo): Observable<Curriculo> {
     return this.httpClient.post<Curriculo>(this.url, curriculo, this.httpOptions)
+  }
+
+  public deletarCurriculo(id: number):Observable<Curriculo>{
+    return this.httpClient.delete<Curriculo>(`${this.url}/${id}`)
   }
 }

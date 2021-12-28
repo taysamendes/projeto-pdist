@@ -3,6 +3,9 @@
     padding-left: 60px;
 }
 
+strong {
+    padding-right: 6px;
+}
 
 .font {
     font-family: 'Dosis', sans-serif;

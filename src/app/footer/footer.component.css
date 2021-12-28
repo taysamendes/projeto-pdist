@@ -1,3 +1,9 @@
+footer {
+    position: sticky;
+    padding-top: 73px;
+
+}
+
 .text-uppercase {
     font-size: 22px;
     font-family: 'Comfortaa', cursive;

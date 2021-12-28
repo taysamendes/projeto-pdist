@@ -2,65 +2,26 @@
 
 <div class="container">
 
-    <h3 class="font"><strong>Currículos</strong></h3>
+    <h3 class="font" style="text-align: center; margin-top: 3rem; font-size: 2.6rem;"><strong>Currículos</strong></h3>
 
-    <div class="card-group">
+    <div class="card-group" *ngFor="let curriculo of curriculos">
         <div class="card">
-            <img src="https://i.imgur.com/YE4STpY.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title font">Fulano Beltrano da Silva</h5>
-                <p class="card-text font">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary font" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Ver currículo
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title font" id="exampleModalLabel">Fulano Beltrano da Silva</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="font"><strong>Email:</strong> fulano@gmail.com</div>
-                                <div class="font">Email: fulano@gmail.com</div>
-                                <div class="font">Email: fulano@gmail.com</div>
-                                <div class="font">Email: fulano@gmail.com</div>
-                                <div class="font">Email: fulano@gmail.com</div>
-                                <div class="font">Email: fulano@gmail.com</div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary font" data-bs-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
+                <h5 class="card-title font" >{{curriculo.nome}}</h5>
+                <div class="dados">
+                    <div class="font"><strong>Email:</strong>{{curriculo.email}} </div>
+                    <div class="font"><strong>Telefone:</strong>{{curriculo.telefone}} </div>
+                    <div class="font"><strong>Cidade:</strong>{{curriculo.cidade}}</div>
+                    <div class="font"><strong>Formação:</strong>{{curriculo.formacao}}</div>
+                    <div class="font"><strong>Experiência:</strong>{{curriculo.experiencia}}</div>
+                    <div class="font"><strong>Conhecimentos Técnicos:</strong>{{curriculo.conhecimento}}</div>
+                </div>
+                <div class="botoes" style="padding-left: 75%;">
+                   <button type="button" class="btn btn-danger" (click)="deletar(curriculo.id)" style="margin-right: 4px;">Deletar</button>
+                    <button type="button" class="btn btn-info">Alterar</button>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="https://i.imgur.com/YE4STpY.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title font">Fulano Beltrano da Silva</h5>
-                <p class="card-text font">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary font">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://i.imgur.com/YE4STpY.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title font">Fulano Beltrano da Silva</h5>
-                <p class="card-text font">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary font">Go somewhere</a>
-            </div>
         </div>
     </div>
 </div>
