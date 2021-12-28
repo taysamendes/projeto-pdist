@@ -27,7 +27,10 @@ export class CurriculosComponent implements OnInit {
 
   deletar(id:number){
     this.curriculoService.deletarCurriculo(id).subscribe(()=>{
+      window.location.reload();
     });
+
   }
+
 
 }
