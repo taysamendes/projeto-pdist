@@ -9,6 +9,7 @@ import { Curriculo } from 'src/app/curriculos/curriculo.model';
 })
 export class CurriculoService {
   url = 'http://new-django.herokuapp.com/students'
+  urlDel = 'http://new-django.herokuapp.com/student'
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -28,6 +29,6 @@ export class CurriculoService {
   }
 
   public deletarCurriculo(id: number):Observable<Curriculo>{
-    return this.httpClient.delete<Curriculo>(`${this.url}/${id}`)
+    return this.httpClient.delete<Curriculo>(`${this.urlDel}/${id}`)
   }
 }

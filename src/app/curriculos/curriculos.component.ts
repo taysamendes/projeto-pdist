@@ -22,13 +22,11 @@ export class CurriculosComponent implements OnInit {
   listarCurriculos(){
    this.curriculoService.listarCurriculos().subscribe(data =>{
      this.curriculos = data
-     console.log(data)
    })
   }
 
   deletar(id:number){
-    this.curriculoService.deletarCurriculo(id).subscribe(dado =>{
-      console.log(dado.nome)
+    this.curriculoService.deletarCurriculo(id).subscribe(()=>{
     });
   }
 
